@@ -1,0 +1,10 @@
+<h3> These are ALL of the dinos that we can GET</h3>
+<a href="/dinosaurs">BACK TO DINOS</a>
+<ul>
+    <% dinosaurs.forEach(function(dinosaur) {%>
+      <li><a href="/dinosaurs/<%= dinosaur.id %>" ><%= dinosaur.name %>- <%= dinosaur.type%></a> </li> 
+    <% });%>
+</ul>
+ <hr />
+
+  <a href="/">&larr; Back Home</a>
